@@ -19,7 +19,7 @@
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
@@ -29,54 +29,51 @@
       text-align: center;
       color: #4B0082;
       margin: 30px 0 20px;
-      font-size: 28px;
-      letter-spacing: 1px;
+      font-size: 26px;
     }
 
     /* District Cards */
     .districts {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       padding: 20px;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.25s;
+      transition: transform 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
     }
 
     .card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
 
-    .info {
+    .card .info {
       padding: 15px;
       text-align: center;
     }
 
-    .info p {
+    .card .info p {
       margin: 5px 0;
       font-size: 18px;
       font-weight: bold;
-      color: #333;
     }
 
-    .info span {
+    .card .info span {
       font-size: 16px;
-      color: #666;
+      color: #555;
     }
   </style>
 </head>
@@ -92,82 +89,29 @@
 
   <!-- Districts Grid -->
   <div class="districts">
+    <div class="card">
+      <img src="araria.jpg" alt="Araria">
+      <div class="info">
+        <p>ARARIA</p>
+        <span>अररिया</span>
+      </div>
+    </div>
 
-    <div class="card"><img src="images/araria.jpg" alt="Araria"><div class="info"><p>ARARIA</p><span>अररिया</span></div></div>
+    <div class="card">
+      <img src="patna.jpg" alt="Patna">
+      <div class="info">
+        <p>PATNA</p>
+        <span>पटना</span>
+      </div>
+    </div>
 
-    <div class="card"><img src="images/arwal.jpg" alt="Arwal"><div class="info"><p>ARWAL</p><span>अरवल</span></div></div>
-
-    <div class="card"><img src="images/aurangabad.jpg" alt="Aurangabad"><div class="info"><p>AURANGABAD</p><span>औरंगाबाद</span></div></div>
-
-    <div class="card"><img src="images/banka.jpg" alt="Banka"><div class="info"><p>BANKA</p><span>बांका</span></div></div>
-
-    <div class="card"><img src="images/begusarai.jpg" alt="Begusarai"><div class="info"><p>BEGUSARAI</p><span>बेगूसराय</span></div></div>
-
-    <div class="card"><img src="images/bhagalpur.jpg" alt="Bhagalpur"><div class="info"><p>BHAGALPUR</p><span>भागलपुर</span></div></div>
-
-    <div class="card"><img src="images/bhojpur.jpg" alt="Bhojpur"><div class="info"><p>BHOJPUR</p><span>भोजपुर</span></div></div>
-
-    <div class="card"><img src="images/buxar.jpg" alt="Buxar"><div class="info"><p>BUXAR</p><span>बक्सर</span></div></div>
-
-    <div class="card"><img src="images/darbhanga.jpg" alt="Darbhanga"><div class="info"><p>DARBHANGA</p><span>दरभंगा</span></div></div>
-
-    <div class="card"><img src="images/east-champaran.jpg" alt="East Champaran"><div class="info"><p>EAST CHAMPARAN</p><span>पूर्वी चंपारण</span></div></div>
-
-    <div class="card"><img src="images/gaya.jpg" alt="Gaya"><div class="info"><p>GAYA</p><span>गया</span></div></div>
-
-    <div class="card"><img src="images/gopalganj.jpg" alt="Gopalganj"><div class="info"><p>GOPALGANJ</p><span>गोपालगंज</span></div></div>
-
-    <div class="card"><img src="images/jamui.jpg" alt="Jamui"><div class="info"><p>JAMUI</p><span>जमुई</span></div></div>
-
-    <div class="card"><img src="images/jehanabad.jpg" alt="Jehanabad"><div class="info"><p>JEHANABAD</p><span>जहानाबाद</span></div></div>
-
-    <div class="card"><img src="images/kaimur.jpg" alt="Kaimur"><div class="info"><p>KAIMUR</p><span>कैमूर</span></div></div>
-
-    <div class="card"><img src="images/katihar.jpg" alt="Katihar"><div class="info"><p>KATIHAR</p><span>कटिहार</span></div></div>
-
-    <div class="card"><img src="images/khagaria.jpg" alt="Khagaria"><div class="info"><p>KHAGARIA</p><span>खगड़िया</span></div></div>
-
-    <div class="card"><img src="images/kishanganj.jpg" alt="Kishanganj"><div class="info"><p>KISHANGANJ</p><span>किशनगंज</span></div></div>
-
-    <div class="card"><img src="images/lakhisarai.jpg" alt="Lakhisarai"><div class="info"><p>LAKHISARAI</p><span>लखीसराय</span></div></div>
-
-    <div class="card"><img src="images/madhepura.jpg" alt="Madhepura"><div class="info"><p>MADHEPURA</p><span>मधेपुरा</span></div></div>
-
-    <div class="card"><img src="images/madhubani.jpg" alt="Madhubani"><div class="info"><p>MADHUBANI</p><span>मधुबनी</span></div></div>
-
-    <div class="card"><img src="images/munger.jpg" alt="Munger"><div class="info"><p>MUNGER</p><span>मुंगेर</span></div></div>
-
-    <div class="card"><img src="images/muzaffarpur.jpg" alt="Muzaffarpur"><div class="info"><p>MUZAFFARPUR</p><span>मुजफ्फरपुर</span></div></div>
-
-    <div class="card"><img src="images/nalanda.jpg" alt="Nalanda"><div class="info"><p>NALANDA</p><span>नालंदा</span></div></div>
-
-    <div class="card"><img src="images/nawada.jpg" alt="Nawada"><div class="info"><p>NAWADA</p><span>नवादा</span></div></div>
-
-    <div class="card"><img src="images/paschim-champaran.jpg" alt="Paschim Champaran"><div class="info"><p>PASHCHIM CHAMPARAN</p><span>पश्चिमी चंपारण</span></div></div>
-
-    <div class="card"><img src="images/patna.jpg" alt="Patna"><div class="info"><p>PATNA</p><span>पटना</span></div></div>
-
-    <div class="card"><img src="images/purnia.jpg" alt="Purnia"><div class="info"><p>PURNIA</p><span>पूर्णिया</span></div></div>
-
-    <div class="card"><img src="images/rohtas.jpg" alt="Rohtas"><div class="info"><p>ROHTAS</p><span>रोहतास</span></div></div>
-
-    <div class="card"><img src="images/saharsa.jpg" alt="Saharsa"><div class="info"><p>SAHARSA</p><span>सहरसा</span></div></div>
-
-    <div class="card"><img src="images/samastipur.jpg" alt="Samastipur"><div class="info"><p>SAMASTIPUR</p><span>समस्तीपुर</span></div></div>
-
-    <div class="card"><img src="images/saran.jpg" alt="Saran"><div class="info"><p>SARAN</p><span>सारण</span></div></div>
-
-    <div class="card"><img src="images/sheikhpura.jpg" alt="Sheikhpura"><div class="info"><p>SHEIKHPURA</p><span>शेखपुरा</span></div></div>
-
-    <div class="card"><img src="images/sheohar.jpg" alt="Sheohar"><div class="info"><p>SHEOHAR</p><span>शिवहर</span></div></div>
-
-    <div class="card"><img src="images/sitamarhi.jpg" alt="Sitamarhi"><div class="info"><p>SITAMARHI</p><span>सीतामढ़ी</span></div></div>
-
-    <div class="card"><img src="images/siwan.jpg" alt="Siwan"><div class="info"><p>SIWAN</p><span>सिवान</span></div></div>
-
-    <div class="card"><img src="images/supaul.jpg" alt="Supaul"><div class="info"><p>SUPAUL</p><span>सुपौल</span></div></div>
-
-    <div class="card"><img src="images/vaishali.jpg" alt="Vaishali"><div class="info"><p>VAISHALI</p><span>वैशाली</span></div></div>
+    <div class="card">
+      <img src="gaya.jpg" alt="Gaya">
+      <div class="info">
+        <p>GAYA</p>
+        <span>गया</span>
+      </div>
+    </div>
 
 </body>
 </html>
