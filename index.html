@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bihar Govt Website</title>
+    <title>Bihar Districts Website</title>
     <style>
-        .header-logos {
+        .banner {
+            background-color: #4B0082; /* Purple shade */
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
-            background-color: white;
+            padding: 10px 20px;
         }
-        .header-logos img {
-            height: 60px; /* Adjust logo size */
+        .banner img {
+            height: 60px; /* Adjust size of logo */
+        }
+        .banner .center-image {
+            flex: 1;
+            text-align: center;
+        }
+        .banner .center-image img {
+            height: 120px; /* Main center image (stupa etc.) */
         }
     </style>
 </head>
 <body>
-    <div class="header-logos">
-        <!-- Bihar Government Logo -->
-        <img src="bihar_logo.png" alt="Bihar Government Logo">
-
-        <!-- SWaaS Logo -->
-        <img src="swaas_logo.png" alt="SWaaS Logo">
-
-        <!-- Digital India Logo -->
-        <img src="digital_india_logo.png" alt="Digital India Logo">
+    <!-- Banner Section -->
+    <div class="banner">
+        <!-- Bihar Logo -->
+        <img src="bihar_logo.png" alt="Bihar Logo">
+        
+        <!-- Center Image (Stupa) -->
+        <div class="center-image">
+            <img src="stupa_image.png" alt="Bihar Main Image">
+        </div>
+        
+        <!-- Right side Logos -->
+        <div>
+            <img src="swaas_logo.png" alt="SWaaS Logo">
+            <img src="digital_india_logo.png" alt="Digital India Logo">
+        </div>
     </div>
 </body>
 </html>
