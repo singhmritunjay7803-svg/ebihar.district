@@ -2,76 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Districts of Bihar</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background: #f9f9f9;
+      color: #333;
     }
 
-    /* Top Banner */
-    .banner {
-      width: 100%;
-      height: 250px;
-      background: url('https://www.google.com/search?sca_esv=046dc2c9c0fa6748&tbs=simg:CAQSggIJ-3jbgjUVxdYa9gELELCMpwgaOgo4CAQSFJUH_1RibFOgEnAPtKos3_1yqdN_1EOGhp7SJJUCNXFyJvNoPeRh-NBpTOUr8q6ZIshbiAFMAQMCxCOrv4IGgoKCAgBEgQ0exg0DAsQne3BCRqWAQokChJ0b3VyaXN0IGF0dHJhY3Rpb27apYj2AwoKCC9tLzBwZ2w5ChcKBGRvbWXapYj2AwsKCS9tLzBjODVmZAogCg1oaXN0b3JpYyBzaXRl2qWI9gMLCgkvbS8wN3lyOGgKGQoGc2hyaW5l2qWI9gMLCgkvbS8wMmN3Zl8KGAoFc3R1cGHapYj2AwsKCS9tLzAxcTR3ZAw&sxsrf=AE3TifP_QDBVIqEjFMD9pyUVO-1cbbJI6A:1758161479331&q=bihar+district&tbm=isch&sa=X&ved=2ahUKEwjOvrvzneGPAxWETWwGHXO0H7IQwg56BAgKEAA&biw=979&bih=1837&dpr=1.89') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 28px;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-    }
-
-    /* Section Title */
-    h2 {
+    header {
       text-align: center;
-      color: #4B0082;
-      margin: 30px 0 20px;
-      font-size: 26px;
+      padding: 20px;
+      background: #4b0082;
+      color: white;
     }
 
-    /* District Cards */
     .districts {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 per row */
-  gap: 20px;
-  padding: 20px;
-  max-width: 1400px; /* wider so 4 fit well */
-  margin: auto;
-}
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 per row */
+      gap: 20px;
+      padding: 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
 
     .card {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       overflow: hidden;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
+      text-align: center;
     }
 
     .card img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
     }
 
-    .card .info {
-      padding: 15px;
-      text-align: center;
+    .info {
+      padding: 10px;
     }
 
-    .card .info p {
+    .info p {
       margin: 5px 0;
       font-size: 18px;
       font-weight: bold;
+      color: #222;
     }
 
-    .card .info span {
+    .info span {
       font-size: 16px;
       color: #555;
     }
@@ -79,319 +62,61 @@
 </head>
 <body>
 
-  <!-- Banner -->
-  <div class="banner">
-    Districts of Bihar
-  </div>
+  <header>
+    <h1>Districts of Bihar</h1>
+  </header>
 
-  <!-- Section Title -->
-  <h2>DISTRICTS OF BIHAR</h2>
+  <section class="districts">
 
-  <!-- Districts Grid -->
-  <div class="districts">
-    <div class="card">
-      <img src="araria.jpg" alt="Araria">
-      <div class="info">
-        <p>ARARIA</p>
-        <span>अररिया</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>ARARIA</p><span>अररिया</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>ARWAL</p><span>अरवल</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>AURANGABAD</p><span>औरंगाबाद</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>BANKA</p><span>बांका</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>ARWAL</p>
-        <span>अरवल</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>BEGUSARAI</p><span>बेगूसराय</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>BHAGALPUR</p><span>भागलपुर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>BHOJPUR</p><span>भोजपुर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>BUXAR</p><span>बक्सर</span></div></div>
 
-    <div class="card">
-      <img src="gaya.jpg" alt="Gaya">
-      <div class="info">
-        <p>AURANGABAD</p>
-        <span>औरंगाबाद</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>DARBHANGA</p><span>दरभंगा</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>EAST CHAMPARAN</p><span>पूर्वी चंपारण</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>GAYA</p><span>गया</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>GOPALGANJ</p><span>गोपालगंज</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>BANKA</p>
-        <span>बांका</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>JAMUI</p><span>जमुई</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>JEHANABAD</p><span>जहानाबाद</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>KAIMUR</p><span>कैमूर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>KATIHAR</p><span>कटिहार</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>BEGUSARAI</p>
-        <span>BEGUSARAI</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>KHAGARIA</p><span>खगड़िया</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>KISHANGANJ</p><span>किशनगंज</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>LAKHISARAI</p><span>लखीसराय</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>MADHEPURA</p><span>मधेपुरा</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>BHAGALPUR</p>
-        <span>भागलपुर</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>MADHUBANI</p><span>मधुबनी</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>MUNGER</p><span>मुंगेर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>MUZAFFARPUR</p><span>मुजफ्फरपुर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>NALANDA</p><span>नालंदा</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>BHOJPUR</p>
-        <span>भोजपुर</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>NAWADA</p><span>नवादा</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>PASHCHIM CHAMPARAN</p><span>पश्चिम चंपारण</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>PATNA</p><span>पटना</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>PURNIA</p><span>पूर्णिया</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>BUXAR</p>
-        <span>बक्सर</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>ROHTAS</p><span>रोहतास</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SAHARSA</p><span>सहरसा</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SAMASTIPUR</p><span>समस्तीपुर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SARAN</p><span>सारण</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>Darbhanga</p>
-        <span>दरभंगा</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SHEIKHPURA</p><span>शेखपुरा</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SHEOHAR</p><span>शिवहर</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SITAMARHI</p><span>सीतामढ़ी</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SIWAN</p><span>सिवान</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>EAST CHAMPARAN</p>
-        <span>पूर्वी चंपारण</span>
-      </div>
-    </div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>SUPAUL</p><span>सुपौल</span></div></div>
+    <div class="card"><img src="district.jpg"><div class="info"><p>VAISHALI</p><span>वैशाली</span></div></div>
 
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>GAYA</p>
-        <span>गया</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>Gopalganj</p>
-        <span>गोपालगंज</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>Jamui</p>
-        <span>जमुई</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>PATNA</p>
-        <span>पटना</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>SUPAUL</p>
-        <span>सुपौल</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>SIWAN</p>
-        <span>सिवान</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>VAISHALI</p>
-        <span>वैशाली</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="patna.jpg" alt="Patna">
-      <div class="info">
-        <p>WEST CHAMPARAN</p>
-        <span>पश्चिम ई</span>
-      </div>
-    </div>
+  </section>
 
 </body>
 </html>
