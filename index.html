@@ -94,61 +94,53 @@
       color: #555;
     }
 
-   .footer-photos {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 15px;
-    }
-
-    .footer-photos img {
-      width: 60px;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    .footer-links {
-      margin: 10px 0;
-    }
-
-    .footer-links a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .footer-links a:hover {
-      color: #4B0082;
-    }
-  
 footer {
-    margin-top:auto;
-    background:#fff;
-    border-top:1px solid #e5e5e5;
-    padding:20px 10px;
-    text-align:center;
-    font-size:14px;
-    color:#555;
-  }
+  margin-top: 40px;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
 
-  footer a {
-    margin:0 10px;
-    text-decoration:none;
-    color:#555;
-  }
-  footer a:hover { text-decoration:underline; }
+.footer-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-  .footer-logo {
-    display:block;
-    margin:10px auto 5px;
-    width:24px;
-    height:24px;
-  }
+.footer-photos img {
+  width: 50px;
+  height: auto;
+}
 
-  footer small {
-    display:block;
-    margin-top:5px;
-  }
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  color: #4B0082;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto 5px;
+  width: 22px;
+  height: 22px;
+}
 </style>
 </head>
 <body>
@@ -364,11 +356,19 @@ footer {
    </div>
 
        <footer>
-  <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 5px;">
-    <small>© 2025 Bihar State</small>
-    <img src="footer_bihar_emblem.png" alt="Footer Bihar Emblem" style="width:24px; height:auto;">
-    <img src="footer_bihar.png" alt="Footer Bihar" style="width:24px; height:auto;">
+  <div class="footer-links">
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Security</a>
+    <a href="#">Contact</a>
   </div>
+
+  <div class="footer-bottom">
+    <div class="footer-photos">
+    <img src="footer_bihar_emblem.png" alt="Footer Bihar Emblem">
+    <img src="footer_bihar.png" alt="Footer Bihar">
+    <small>© 2025 Bihar State</small>
+  </div>
+ </div>
 </footer>
-</body>
-</html>
+  
