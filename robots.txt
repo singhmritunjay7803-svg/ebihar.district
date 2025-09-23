@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://singhmritunjay7803-svg.github.io/ebihar.district/sitemap.xml
