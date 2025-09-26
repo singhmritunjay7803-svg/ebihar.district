@@ -94,7 +94,7 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       overflow: hidden;
     }
-    .chief-minister-card img {
+    .chief-minister-card img.main {
       width: 100%;
       height: auto;
       border-bottom: 2px solid #eee;
@@ -105,6 +105,25 @@
     .chief-minister-card p {
       margin: 0 0 15px;
       color: #555;
+    }
+   .chief-minister-card .corner {
+      position: absolute;
+      top: 5px;
+      width: 40px;
+      height: auto;
+
+    .chief-minister-card .corner.left {
+      left: 5px;
+    }
+
+    .chief-minister-card .corner.right {
+      right: 5px;
+    }
+
+    .chief-minister-card .info {
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
     }
 
     .districts {
@@ -219,8 +238,10 @@ footer {
     Districts of Bihar
   </div>
 
-  <div class="chief-minister-card" style="max-width:350px; margin:30px auto; display:block;">
-    <img src="chief_minister_of_bihar.jpg" alt="Chief Minister Of Bihar">
+<div class="chief-minister-card" style="max-width:350px; margin:30px auto; display:block;">
+    <img src="chief_minister_of_bihar.jpg" alt="Chief Minister Of Bihar" class="main">
+    <img src="left-icon.png" alt="Left Corner" class="corner left">
+    <img src="right-icon.png" alt="Right Corner" class="corner right">
     <div class="info">
       <h3>Hon'ble 22nd Chief Minister Of Bihar</h3>
       <h3>Nitish Kumar</h3>
