@@ -143,15 +143,14 @@
     }
      
     .deputy_chief_minister_card {
-      width: 300px;
-      height: 20px auto;
+      width: 260px;
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
     }
 
     .line-down {
@@ -191,6 +190,44 @@
       margin-top: 10px;
     }
 
+    .deputy_chief_minister_card img.main {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .deputy_chief_minister_card .corner {
+      position: absolute;
+      top: 10px;
+      width: 40px;
+      height: auto;
+    }
+
+    .deputy_chief_minister_card .corner.left {
+      left: 10px;
+    }
+
+    .deputy_chief_minister_card .corner.right {
+      right: 10px;
+    }
+
+    .deputy_chief_minister_card .info {
+      padding: 10px;
+    }
+
+    .deputy_chief_minister_card h3 {
+      margin: 6px 0;
+      font-size: 16px;
+      color: #4B0082;
+    }
+
+   .deputy_chief_minister_card .info {
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+     
     .districts {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
