@@ -154,8 +154,8 @@
     }
 
     .line-down {
-      width: 2px;
-      height: 40px;
+      width: 4px;
+      height: 80px;
       background: black;
       margin: 0 auto;
     }
@@ -163,33 +163,37 @@
     .split {
       display: flex;
       align-items: flex-start;
-      justify-content: center;
+      justify-content: space-between;
+      max-width: 600px
       position: relative;
-      margin-top: -1px;
+      margin-top: 0 auto;
     }
 
     .split::before {
       content: "";
       position: absolute;
       top: 0;
-      width: 200px;
-      height: 2px;
+      right: 0;
+      left: 0;
+      height: 4px;
       background: black;
     }
 
     .split .line {
-      width: 2px;
-      height: 40px;
+      width: 4px;
+      height: 80px;
       background: black;
-      margin: 0 80px;
     }
 
     .children {
       display: flex;
-      gap: 120px;
       margin-top: 10px;
       flex-direction: row;
-      align-items: stretch;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 600px;
+      margin: 10px auto;
+      align-items: flex-start;
     }
 
     .deputy-chief-minister-card img.main {
