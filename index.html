@@ -2,46 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="dD1wsQOHn4HcxXDAKAkImectzGPzYgabHnvFMOzA6cc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Districts of Bihar</title>
-
-  <meta name="description" content="Explore all districts of Bihar and Learn about culture, heritage, history, and tourist places in Bihar">
-
-  <meta name="keywords" content="Bihar districts, Bhojpur, Patna, Gaya, Muzaffarpur, Bihar tourism, Bihar culture, Bihar history, Bihar map">
-
-  <meta name="author" content="Districts of Bihar Project">
-
-  <link rel="icon" href="bihar_logo.png" type="image/png">
-
-  <meta property="og:title" content="Districts of Bihar">
-  <meta property="og:description" content="Discover all 38 districts of Bihar with history, culture, and tourism.">
-  <meta property="og:image" content="singhmritunjay7803-svg.github.io/ebihar.district/bihar_logo.png">
-  <meta property="og:url" content="https://singhmritunjay7803-svg.github.io/ebihar.district/">
-  <meta property="og:type" content="website">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Districts of Bihar">
-  <meta name="twitter:description" content="Learn about all districts of Bihar: history, culture, and tourist attractions">
-  <meta name="twitter:image" content="https://singhmritunjay7803-svg.github.io/ebhojpur.district.bihar/bihar_logo.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Districts of Bihar",
-    "url": "https://singhmritunjay7803-svg.github.io/ebihar.district/",
-    "description": "Official website about the districts of Bihar,history, culture, and tourist attractions",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Districts of Bihar",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://singhmritunjay7803-svg.github.io/ebhojpur.district.bihar/bihar_logo.png"
-      }
-    }
-  }
-  </script>
 
   <style>
     body {
@@ -87,151 +50,64 @@
       font-size: 26px;
     }
 
-    .container {
+    .org-chart {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
+      margin: 40px auto;
+      max-width: 700px;
     }
 
-   .chief-minister-card {
-      width: 300px;
-      margin: 20px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      overflow: hidden;
-      position: relative;
-      text-align: centre;
-    }
-
-    .chief-minister-card img.main {
-      width: 100%;
-      height: auto;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .chief-minister-card h3 {
-      margin: 10px 0 5px;
-    }
-
-    .chief-minister-card p {
-      margin: 0 0 15px;
-      color: #555;
-    }
-
-   .chief-minister-card .corner {
-      position: relative;
-      top: 5px;
-      width: 40px;
-      height: auto;
-    }
-    
-    .chief-minister-card .corner.left {
-      top: 5px;
-      left: 10px;
-    }
-
-    .chief-minister-card .corner.right {
-      top: 5px;
-      right: 10px;
-    }
-
-    .chief-minister-card .info {
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-     
+    .chief-minister-card,
     .deputy-chief-minister-card {
-      width: 300px;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      overflow: hidden;
+      padding: 20px;
       text-align: center;
-      margin: 20px auto;
-      position: relative;
+      width: 260px;
     }
 
     .line-down {
-      width: 4px;
-      height: 80px;
+      width: 4px;     /* thickness */
+      height: 60px;   /* vertical length */
       background: black;
       margin: 0 auto;
     }
 
     .split {
       display: flex;
-      align-items: flex-start;
       justify-content: space-between;
-      max-width: 600px;
       position: relative;
-      margin-top: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .split::before {
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
       left: 0;
-      height: 4px;
+      right: 0;
+      height: 4px;   /* horizontal line thickness */
       background: black;
     }
 
     .split .line {
-      width: 4px;
-      height: 80px;
+      width: 4px;    /* vertical arm thickness */
+      height: 60px;  /* vertical arm length */
       background: black;
     }
 
     .children {
       display: flex;
-      margin-top: 10px;
-      flex-direction: row;
       justify-content: space-between;
       width: 100%;
       max-width: 600px;
-      margin: 10px auto;
-      align-items: flex-start;
+      margin: 20px auto 40px;
     }
 
-    .deputy-chief-minister-card img.main {
-      width: 100%;
-      height: auto;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .deputy-chief-minister-card .corner {
-      position: absolute;
-      top: 10px;
-      width: 40px;
-      height: auto;
-    }
-
-    .deputy-chief-minister-card .corner.left {
-      left: 10px;
-    }
-
-    .deputy-chief-minister-card .corner.right {
-      right: 10px;
-    }
-
-   .deputy-chief-minister-card .info {
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    .deputy-chief-minister-card h3 {
-      margin: 10px 0 5px;
-    }
-
-    .deputy-chief-minister-card p {
-      margin: 0 0 15px;
-      color: #555;
-    }
-     
     .districts {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -344,9 +220,8 @@ footer {
     Districts of Bihar
   </div>
 
-  <div class="container">
-<div class="chief-minister-card"
-style="max-width:350px; margin:30px auto; display:block;">
+  <div class="org-chart">
+    <div class="chief-minister-card">
     <img src="chief_minister_of_bihar.jpg" alt="Chief Minister Of Bihar" class="main">
     <img src="chief_minister_of_bihar_political_party.jpg" alt="Chief Minister Of BiharPolitical Party" class="corner left">
     <img src="chief_minister_of_bihar_alliance_party.jpg" alt="Chief Minister Of Bihar Alliance Party" class="corner right">
