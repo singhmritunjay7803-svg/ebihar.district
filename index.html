@@ -65,14 +65,29 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       padding: 20px;
       text-align: center;
-      width: 260px;
+      width: 320px;
+      margin: 0 auto 30px;
+    }
+    .chief-minister-card img,
+    .deputy-chief-minister-card img {
+      width: 88px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      margin-right: 6px;
+    }
+
+    .chief-minister-card .main,
+    .deputy-chief-minister-card .main {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
     }
 
     .line-down {
-      width: 4px0p;
-      height: 80px;
+      width: 4px;
+      height: 60px;
       background: black;
-      margin: 0 auto;
+      margin: 0 auto 12px auto;
     }
 
     .split {
@@ -82,31 +97,24 @@
       position: relative;
       width: 100%;
       max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .split::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: black;
+      margin: 0 auto 16px auto;
     }
 
     .split .line {
       width: 4px;
-      height: 80px;
+      height: 40px;
+      margin: 0 50px;
       background: black;
     }
 
     .children {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: centre;
+      gap: 20px;
       width: 100%;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 0 auto 20px;
+      flex-wrap: wrap;
     }
 
     .districts {
