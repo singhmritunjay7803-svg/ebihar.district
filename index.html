@@ -47,6 +47,7 @@
       height: auto;
       display: block;
    }
+
     h2 {
       text-align: center;
       color: #4B0082;
@@ -54,37 +55,32 @@
       font-size: 26px;
     }
 
-    .org-chart {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 40px auto;
-      max-width: 700px;
+    .chief-minister {
+      text-align: center;
+      margin-top: 40px;
     }
 
-    .chief-minister-card,
-    .deputy-chief-minister-card {
+    .cm-photo {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: -60px;
+      position: relative;
+      z-index: 10;
+      background: #fff;
+    }
+
+    .chief-minister-card {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      padding: 20px;
+      padding: 80px 20px 20px;
       text-align: center;
-      width: 320px;
+      width: 340px;
       margin: 0 auto 30px;
-    }
-    .chief-minister-card img,
-    .deputy-chief-minister-card img {
-      width: 88px;
-      border-radius: 10px;
-      margin-bottom: 8px;
-      margin-right: 6px;
-    }
-
-    .chief-minister-card .main,
-    .deputy-chief-minister-card .main {
-      width: 100px;
-      display: block;
-      margin: 0 auto;
+      position: relative;
     }
 
     .line-down {
@@ -233,9 +229,10 @@ footer {
     Districts of Bihar
   </div>
 
-  <div class="org-chart">
-    <div class="chief-minister-card">
-    <img src="chief_minister_of_bihar.jpg" alt="Chief Minister Of Bihar" class="main">
+  <div class="chief-minister">
+    <img src="chief_minister_of_bihar.jpg" alt="Chief Minister Of Bihar" class="chief-minister-photo">
+
+  <div class="chief-minister-card">
     <img src="chief_minister_of_bihar_political_party.jpg" alt="Chief Minister Of BiharPolitical Party" class="corner left">
     <img src="chief_minister_of_bihar_alliance_party.jpg" alt="Chief Minister Of Bihar Alliance Party" class="corner right">
 
